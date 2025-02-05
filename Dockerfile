@@ -6,7 +6,7 @@ COPY ui.patch /tmp
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive \
-    apt-get install -y binutils ca-certificates curl dbus fonts-noto-cjk locales libegl1 openbox patch python3-numpy software-properties-common tigervnc-standalone-server tigervnc-tools tzdata xz-utils --no-install-recommends
+    apt-get install -y binutils ca-certificates curl dbus fonts-noto-cjk locales libegl1 mesa-gles openbox patch python3-numpy software-properties-common tigervnc-standalone-server tigervnc-tools tzdata xz-utils --no-install-recommends
 
 RUN add-apt-repository ppa:nicotine-team/stable && \
     apt-get update && \
